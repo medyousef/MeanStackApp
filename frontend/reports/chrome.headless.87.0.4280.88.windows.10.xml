@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<testExecutions version='1'>
+    <file path='src/app/app-service.service.spec.ts'>
+        <testCase name='AppService should be created' duration='18'/>
+        <testCase name='AppService should return URL' duration='3'/>
+        <testCase name='AppService should retrieve one Object from the API' duration='6'/>
+        <testCase name='AppService should retrieve Coordinates from the API' duration='3'/>
+        <testCase name='AppService should retrieve TotalPower from the API' duration='4'/>
+        <testCase name='AppService should retrieve HeightDiameter from the API' duration='3'/>
+        <testCase name='AppService should retrieve TopTen from the API' duration='2'/>
+        <testCase name='AppService should retrieve BoxPlot from the API' duration='3'/>
+        <testCase name='AppService should retrieve BuildTime from the API' duration='4'/>
+    </file>
+    <file path='src/app/app.component.spec.ts'>
+        <testCase name='AppComponent should create' duration='30'/>
+    </file>
+    <file path='src/app/bottom-bar/bottom-bar.component.spec.ts'>
+        <testCase name='BottomBarComponent should create' duration='10'/>
+    </file>
+    <file path='src/app/header/header.component.spec.ts'>
+        <testCase name='HeaderComponent should create' duration='6'/>
+    </file>
+    <file path='src/app/map/map-filter/map-filter.component.spec.ts'>
+        <testCase name='MapFilter should be created' duration='7'/>
+        <testCase name='MapFilter should assign values in function' duration='6'/>
+    </file>
+    <file path='src/app/map/map.component.spec.ts'>
+        <testCase name='MapComponent should create' duration='32'/>
+        <testCase name='MapComponent should have defined mapFilterService' duration='13'/>
+        <testCase name='MapComponent should call getCoordinatesFromAPI on invokeMapComponentFunction' duration='13'/>
+        <testCase name='MapComponent should call getCoordinatesFromAPI on Init' duration='11'/>
+        <testCase name='MapComponent should call initMap after ViewInit' duration='19'/>
+        <testCase name='MapComponent should call drawMarkers' duration='18'/>
+        <testCase name='MapComponent should call getCoordinates from Service on getCoordinatesFromAPI' duration='16'/>
+        <testCase name='MapComponent should call getCoordinates from Service on getCoordinatesFromAPI and throw error' duration='12'/>
+    </file>
+    <file path='src/app/options/click.service.spec.ts'>
+        <testCase name='ClickService should be created' duration='2'/>
+        <testCase name='ClickService should emit' duration='5'/>
+    </file>
+    <file path='src/app/options/details/details.component.spec.ts'>
+        <testCase name='DetailsComponent should create' duration='47'/>
+        <testCase name='DetailsComponent should have defined mapService' duration='13'/>
+        <testCase name='DetailsComponent should call getByIdFromAPI on invokeDetailComponentFunction' duration='19'/>
+        <testCase name='DetailsComponent should init data' duration='20'/>
+        <testCase name='DetailsComponent should init arrayOfKeys' duration='14'/>
+        <testCase name='DetailsComponent should call getById from Service on getByIdFromAPI' duration='17'/>
+        <testCase name='DetailsComponent should call getById from Service on getByIdFromAPI and throw error' duration='20'/>
+    </file>
+    <file path='src/app/options/statistics/statistics-filter/statistics-filter.component.spec.ts'>
+        <testCase name='StatisticsFilter should be created' duration='5'/>
+        <testCase name='StatisticsFilter should assign values in function' duration='2'/>
+    </file>
+    <file path='src/app/options/statistics/statistics.component.spec.ts'>
+        <testCase name='StatisticsComponent should create' duration='32'/>
+        <testCase name='StatisticsComponent should have defined statisticsFilterService' duration='9'/>
+        <testCase name='StatisticsComponent should call API functions on invokeStatisticsComponentFunction' duration='9'/>
+        <testCase name='StatisticsComponent should call API functions on Init' duration='7'/>
+        <testCase name='StatisticsComponent should call getTotalPower from Service on getPowerFromAPI' duration='7'/>
+        <testCase name='StatisticsComponent should call getHeightDiameter from Service on getHeightDiameterFromAPI' duration='8'/>
+        <testCase name='StatisticsComponent should call getTopTen from Service on getTopTenFromAPI' duration='10'/>
+        <testCase name='StatisticsComponent should call getBoxPlot from Service on getBoxPlotFromAPI' duration='9'/>
+        <testCase name='StatisticsComponent should call getBuildTime from Service on getBuildTimeFromAPI' duration='16'>
+            <failure message='TestCase failed'>TypeError: Cannot read property 'length' of undefined
+    at SafeSubscriber._next (http://localhost:8200/_karma_webpack_/src/app/options/statistics/statistics.component.ts:240:20)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+    at Observable._subscribe (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+    at Observable._trySubscribe (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+    at Observable.subscribe (http://localhost:8200/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+    at StatisticsComponent.getBoxPlotFromAPI (http://localhost:8200/_karma_webpack_/src/app/options/statistics/statistics.component.ts:236:16)
+    at &lt;Jasmine>
+</failure>
+        </testCase>
+        <testCase name='StatisticsComponent should call getTotalPower from Service on getPowerFromAPI and throw error' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+        <testCase name='StatisticsComponent should call getHeightDiameter from Service on getHeightDiameterFromAPI and throw error' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+        <testCase name='StatisticsComponent should call getTopTen from Service on getTopTenFromAPI and throw error' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+        <testCase name='StatisticsComponent should call getBoxPlot from Service on getBoxPlotFromAPI and throw error' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+        <testCase name='StatisticsComponent should call getBuildTime from Service on getBuildTimeFromAPI and throw error' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+    </file>
+</testExecutions>

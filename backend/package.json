@@ -1,0 +1,40 @@
+{
+  "name": "ac_jason",
+  "version": "1.0.0",
+  "description": "AbstractConnoisseurs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/nyc/bin/nyc --reporter lcov mocha --exit test/**/*.js",
+    "start": "nodemon src/app/app.js",
+    "start-once": "node src/app/app.js",
+    "windows-stop": "node -e \"require('./stopScript').stopWindows()\"",
+    "linux-stop": "node -e \"require('./stopScript').stopLinux()\"",
+    "sonar-scanner": "sonar-scanner"
+  },
+  "author": "medyousef",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://www.robert-magnus.de/gitlab/htw/abstractconnoisseurs/projekt-softwareentwicklung.git"
+  },
+  "keywords": [
+    "AbstractConnoisseurs"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^10.1.0",
+    "mongoose": "^5.13.15",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "should-http": "^0.1.1",
+    "sonar-scanner": "^3.1.0",
+    "sonarqube-scanner": "^2.5.0",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0"
+  }
+}

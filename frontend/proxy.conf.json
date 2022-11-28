@@ -1,0 +1,10 @@
+{
+    "/ac/api/*" : {
+      "target" : "http://localhost:6045",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/ac/api/": "/api/"
+      },
+      "logLevel": "info"
+    }
+}

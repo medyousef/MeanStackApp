@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<testExecutions version='1'>
+    <file path='src/app/app-service.service.spec.ts'>
+        <testCase name='ApiService should be created' duration='11'/>
+    </file>
+    <file path='src/app/bottom-bar/bottom-bar.component.spec.ts'>
+        <testCase name='BottomBarComponent should create' duration='17'/>
+    </file>
+    <file path='src/app/header/header.component.spec.ts'>
+        <testCase name='HeaderComponent should create' duration='6'/>
+    </file>
+</testExecutions>
