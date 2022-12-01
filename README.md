@@ -2,8 +2,8 @@
 ![Layout](https://github.com/medyousef/MeanStackApp/blob/main/Dokumentation/WKA-Details.png)
 ![Layout](https://github.com/medyousef/MeanStackApp/blob/main/Dokumentation/Statistiken.png)
 
-#Prerequisites:
-Locally install Node.js 16+ (it won't work with 17+)
+# Prerequisites:
+Locally install Node.js 16+ (it won't work with 17+) <br />
 install angular cli 10+
 
 # Running:
